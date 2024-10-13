@@ -337,7 +337,7 @@ font-size: 2.5rem;
   transition: padding var(--transition-1);
   z-index: 4;
   background-color: white;
-  border-bottom: 1px groove rgba(106, 0, 0, 0.376);
+  border-bottom: 1px groove rgba(255, 0, 0, 0.376);
 }
 
 .header.active {
@@ -2306,8 +2306,9 @@ margin-top: -80rem;
   }
 
   .seta {
-    font-size: 1.2rem;
-    padding: 0.5rem;
+    font-size: 3rem;
+    padding: 1rem;
+    margin-bottom: -10rem;
   }
   .hero {
     padding: 1rem;
