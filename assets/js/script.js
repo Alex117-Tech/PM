@@ -52,49 +52,54 @@ addEventOnElem(window, "scroll", headerActive);
 
 
 //----------------------------------------------------------------//
-var contar=1;
+var contar = 1;
+var indice = 0; // Global para manter sincronizado
+const radioButtons = document.querySelectorAll('input[name="radio-btn"]');
+
+// Definindo o primeiro radio como ativo
 window.document.getElementById("radio1").checked = true;
 
+// Função para avançar para a próxima imagem automaticamente a cada 10 segundos
 setInterval(() => {
   ProximaImagem();
 }, 10000);
 
-function ProximaImagem(params) {
+// Função para avançar para a próxima imagem automaticamente
+function ProximaImagem() {
   contar++;
-  if (contar>=4) {
-    contar=1;
+  if (contar > radioButtons.length) {
+    contar = 1;
   }
   window.document.getElementById("radio" + contar).checked = true;
+  indice = contar - 1; // Atualiza o índice manual
 }
-
 
 //------------------------------Setinhas-----------------------------//
 
 document.addEventListener('DOMContentLoaded', function () {
-  const radioButtons = document.querySelectorAll('input[name="radio-btn"]');
   const Esquerda = document.getElementById("esquerda");
   const Direita = document.getElementById("direita");
-  Esquerda.addEventListener("click", clicar2);
-  Direita.addEventListener("click", clicar);
-  let indice = 0;
 
+  Esquerda.addEventListener("click", clicarEsquerda);
+  Direita.addEventListener("click", clicarDireita);
 
-  function clicar() {
-    if (indice > 0) {
-      indice--;
-    } else {
-      indice = radioButtons.length - 1; 
+  // Função ao clicar na seta direita (avançar)
+  function clicarDireita() {
+    indice++;
+    if (indice >= radioButtons.length) {
+      indice = 0; // Volta ao primeiro slide
     }
     radioButtons[indice].checked = true;
+    contar = indice + 1; // Sincroniza o contador automático
   }
 
-  function clicar2() {
-    if (indice < radioButtons.length - 1) {
-      indice++;
-    } else {
-      indice = 0; 
+  // Função ao clicar na seta esquerda (voltar)
+  function clicarEsquerda() {
+    indice--;
+    if (indice < 0) {
+      indice = radioButtons.length - 1; // Volta ao último slide
     }
     radioButtons[indice].checked = true;
+    contar = indice + 1; // Sincroniza o contador automático
   }
 });
-
