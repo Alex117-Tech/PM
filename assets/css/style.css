@@ -2136,6 +2136,10 @@ margin-top: -80rem;
     padding: 0.8rem;
     bottom: 21rem;
   }
+  .seta:hover{
+    color: red;
+
+  }
 }
 
 
