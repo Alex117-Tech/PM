@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Moz</title>
+  <!--Alex 117-->
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="icon" href="Screenshot__133_-removebg-preview.png">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    -imagens pre carregadas
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo"><img src="assets/images/Screenshot__143_-removebg-preview.png"> <li class="logo-p">Portfólio Moz</li></a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="#" class="logo">Portfólio moz</a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Inicio</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#service" class="navbar-link" data-nav-link>Serviços</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#feature" class="navbar-link" data-nav-link>Features</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#project" class="navbar-link" data-nav-link>Portfolio</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#blog" class="navbar-link" data-nav-link>Instagram</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <a href="#" class="wbs-btn vamo-conv">Vamos conversar? 👋</a>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+<section class="carrossel">
+  <div class="slider">
+<div class="slides">
+  <input type="radio" name="radio-btn" id="radio1">
+  <input type="radio" name="radio-btn" id="radio2">
+  <input type="radio" name="radio-btn" id="radio3">
+
+
+<div class="slide primeiro"> <img src="assets/images/pcs/web-design-internet-website-responsive-software-concept.jpg" alt="" class="img"></div>
+<div class="slide"><img src="assets/images/pcs/web-template-website-design-concept.jpg" alt="" class="img"></div>
+<div class="slide"><img src="assets/images/pcs/young-female-designer-checking-her-smartphone.jpg" alt="" class="img"></div>
+
+
+<div class="manual-btn">
+<div class="btn1"></div>
+<div class="btn2"></div>
+<div class="btn3"></div>
+</div>
+</div>
+
+<div class="navigation">
+  <label for="radio1" class="label-btn"></label>
+  <label for="radio2" class="label-btn"></label>
+  <label for="radio3" class="label-btn"></label>
+</div> 
+</div>
+<div>
+<button class="direita seta" id="direita">&lt;</button>
+<button class="esquerda seta" id="esquerda">&gt;</button>
+</div>
+</section>
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="hero">
+        <div class="container pic">
+
+          <div class="hero-content">
+
+            <h1 class="section-subtitle nv1 has-before">
+              Portfólio Moz  <span class="has-before">   A um clique do Futuro</span>
+            </h1>
+
+            <p class="hero-text hero-p" >
+              Na portfólio somos especializados em projetar, construir, enviar e escalar produtos funcionais com eficiência e qualidade.
+            </p>
+
+            <div class="wrapper">
+              <a href="#" class="btn btn-primary has-before has-after">Como Funciona?</a>
+            </div>
+
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link" style="--color: hsl(241, 77%, 63%);">
+                  <ion-icon name="logo-facebook"></ion-icon>
+
+                  <span class="span">Facebook</span>
+                </a>
+              </li>
+
+              
+              <li>
+                <a href="#" class="social-link" style="--color: hsl(203, 89%, 53%);">
+                  <ion-icon name="logo-twitter"></ion-icon>
+
+                  <span class="span">Twitter</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.instagram.com/portfoliomozoficial/" class="social-link" style="--color: hsl(9, 81%, 50%);">
+                  <ion-icon name="logo-instagram"></ion-icon>
+
+                  <span class="span">Instagram</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social-link" style="--color: hsl(91, 96%, 47%);">
+                  <ion-icon name="logo-whatsapp"></ion-icon>
+
+                  <span class="span">Whatsapp</span>
+                </a>
+              </li>
+
+
+            </ul>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="assets/images/Screenshot__143_-removebg-preview.png" class="img-hero">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" id="service" aria-label="service">
+        <div class="container">
+
+          <h1 class="section-subtitle has-before text-center">Nossos Serviços</h1>
+
+          <h2 class="h2 section-title text-center">Dando Um Boost no Seu Negócio<span class="has-before">
+               Com os Melhores Serviços do Mercado </span></h2>
+
+          <ul class="grid-list">
+
+
+            <li>
+              <div class="service-card" style="--color: 267, 76%, 57%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-2.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Desenvolvimento de Websites</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" style="--color: 17, 100%, 68%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-3.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Suporte e atendimento personalizado </a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" style="--color: 210, 100%, 53%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-5.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Criação de Portfólios</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" style="--color: 157, 89%, 44%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-6.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">consultoria e Análise de sistemas </a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" style="--color: 52, 98%, 50%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-7.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">consultoria</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              
+              <a href="#" class="link-card" style="--color: 203, 97%, 75%">
+                <span class="span">04 Mais dos nossos</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURE
+      -->
+
+      <section class="section feature" id="feature" aria-label="feature">
+        <div class="container">
+
+          <figure class="feature-banner">
+            <img src="assets/images/Foto_vertical_de_um_homem_de_pele_escura_pensativo_e_contemplativo_mantém_a_mão_sob_o_queixo__olhando_pensativamente_para_cima___Foto_Grátis-removebg-preview.png" width="582" height="585" loading="lazy" alt="feature banner"
+              class="w-100">
+          </figure>
+
+          <div class="feature-content">
+
+            <p class="section-subtitle has-before">Porque Escolher a Portfólio?</p>
+
+            <h2 class="h2 section-title">
+              Na Portfolio somos especializados em criar Soluções para os mais diversos desafios do dia dia
+            </h2>
+
+            <ul class="feature-list">
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon" style="--color: 174, 77%, 50%">
+                    <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">Trabalho agil</h3>
+
+                    <p class="card-text">
+                      Garantimos a melhor performance e se utizando de metodologias e tecnologias para impulsionar o seu Negocio
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon" style="--color: 241, 77%, 63%;">
+                    <ion-icon name="people-sharp" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">Equipa Dedicada para cada caso e Necessidade</h3>
+
+                    <p class="card-text">
+                      Na Portfólio Moz, acreditamos que o sucesso de cada projeto está diretamente ligado à paixão e ao compromisso da nossa equipe. Por isso, formamos grupos especializados, cada um deles dedicado a atender necessidades específicas e a superar expectativas.
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon" style="--color: 343, 98%, 60%;">
+                    <ion-icon name="headset-sharp" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">Suporte especializado</h3>
+
+                    <p class="card-text">
+                      Na Portfolio, somos especializados em projetar, construir, enviar e escalar portfólios de maneira elegante e eficiente.
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #Projectos
+      -->
+
+      <section class="section project" id="project" aria-label="project">
+        <div class="container">
+
+          <p class="section-subtitle has-before text-center">Projectos</p>
+
+          <h2 class="h2 section-title text-center">
+            Os Projectos Mais Recentes da Pórtfolio <span class="has-before">Projectos</span>
+          </h2>
+
+          <ul class="filter-list">
+
+            <li>
+              <button class=" wbs-btn filter-btn active btn btn-secondary has-before has-after data-filter-btn">Website</button>
+            </li>
+
+          </ul>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 835; --height: 429;">
+                  <img src="./assets/images/pcs/website-development-links-seo-webinar-cyberspace-concept.jpg" width="835" height="429" loading="lazy" alt="Book art design"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Desenvolvimento Web </a>
+                  </h3>
+
+                  <a href="#" class="card-tag">Desenvolvimento</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 429;">
+                  <img src="./assets/images/pcs/Design grafico.jpg" width="416" height="429" loading="lazy" alt="Graphic Design"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Design Grafico</a>
+                  </h3>
+
+                  <a href="#" class="card-tag">Design photoshop</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 429;">
+                  <img src="./assets/images/pcs/UIUX2.jpg" width="416" height="429" loading="lazy" alt="3d Digital Art"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">UI/UX design</a>
+                  </h3>
+
+                  <a href="#" class="card-tag">Design</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 429;">
+                  <img src="./assets/images/pcs/web-template-website-design-concept.jpg" width="416" height="429" loading="lazy" alt="Web Design"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Web Design</a>
+                  </h3>
+
+                  <a href="#" class="card-tag">Design</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 429;">
+                  <img src="./assets/images/pcs/mobile design.jpg" width="416" height="429" loading="lazy"
+                    alt="Mobile App Design" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Mobile App Design</a>
+                  </h3>
+
+                  <a href="#" class="card-tag">Design</a>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #NEWSLETTER
+      -->
+
+      <section class="section newsletter has-bg-image" aria-label="newsletter"
+        style="background-image: url('./assets/images/newsletter-bg.jpg')">
+        <div class="container">
+
+          <figure class="newsletter-banner">
+            <img src="./assets/images/newsletter-banner.png" width="355" height="356" loading="lazy"
+              alt="newsletter banner" class="w-100">
+          </figure>
+
+          <div class="newsletter-content">
+
+            <p class="section-subtitle has-before">Fique Por Dentro</p>
+
+            <h2 class="h2 section-title">Assine a nossa newslater e fique por dentro das nossas Novidades</h2>
+
+            <form action="" class="newsletter-form">
+              <input type="email" name="email_address" placeholder="introduzir seu Email" required class="email-field">
+
+              <button type="submit" class="btn btn-secondary has-before has-after">
+                <span class="span">Assinar</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG/IG
+      -->
+
+      <section class="section blog" id="blog" aria-label="blog" align="center">
+        <div class="container">
+
+          <p class="section-subtitle text-center has-before">Instagram Posts</p>
+
+          <h2 class="h2 section-title text-center">
+            Os nossos Populares <span class="has-before">Posts no Instagram</span>
+          </h2>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card large">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/portfoliomozoficial_1721244095323.jpeg" width="644" height="363" loading="lazy"
+                    alt="Godaddy user flow solution..." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+                    <a href="#" class="tag">Perguntas e Respostas com Ismael Grahms</a>
+
+                    <a href="#" class="publish-date">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">30/07/2024</span>
+                    </a>
+                  </div>
+
+                  <h3>
+                    <a href="#" class="card-title"> Como seguir a carreira de IT em Moz?...</a>
+                  </h3>
+
+                  <p class="">
+                    Acompanhe cada detalhe com Ismael Grahms . em "Perguntas e Respostas" este que tem desempenhado um papel importante em uma das maiores empresas de Moz
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card large ">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/pcs/portfoliomozoficial_1728557115491.jpeg" width="644" height="363" loading="lazy"
+                    alt="Godaddy user flow solution..." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+                    <a href="#" class="tag">Sabias Que???</a>
+
+                    <a href="#" class="publish-date">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">14/05/2024</span>
+                    </a>
+                  </div>
+
+                  <h3>
+                    <a href="#" class="card-title"> Subida Das Tarifas de Internet</a>
+                  </h3>
+
+                  <p class="">
+                    Saiba sobre as curiosidades de MOÇAMBIQUE no Ramo da Tecnologia, das Telecomunicações e da Informática!
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top ">
+
+        <div class="footer-brand">
+
+          <p class="footer-list-title">Sobre Nós</p>
+
+          <p class="footer-text">
+            O Portfólio Moz é uma iniciativa estratégica que visa promover o desenvolvimento sustentável e o investimento em Moçambique. Através da colaboração entre o governo, o setor privado e a sociedade civil.<!--, o Portfólio busca criar um ambiente favorável para negócios e investimentos que impulsionem a economia do país.-->
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/portfoliomozoficial/" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Links Uteis</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contacte Nos</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Como Funciona</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Criar</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Explorar</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Termos e Serviços Aplicaveis</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Comunidade</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Help Center</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Parceiros</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Sugestões</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Instagram</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Newsletters</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title insta-car">Instagram Post's</p>
+          </li>
+
+          <li>
+            <ul class="insta-post">
+
+              <li>
+                <div class="insta-card">
+
+                  <figure class="post-banner">
+                    <img src="assets/images/Screenshot (152).png" width="77" height="63" loading="lazy"
+                      alt="instagram post" class="img-cover">
+                  </figure>
+
+                  <a href="#" class="card-content">
+                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="insta-card">
+
+                  <figure class="post-banner">
+                    <img src="assets/images/Screenshot (154).png" width="77" height="63" loading="lazy"
+                      alt="instagram post" class="img-cover">
+                  </figure>
+
+                  <a href="https://www.instagram.com/portfoliomozoficial/" class="card-content">
+                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+              </li>
+
+              <li class="insta-pics">
+                <div class="insta-card">
+
+                  <figure class="post-banner">
+                    <img src="assets/images/Screenshot (155).png" width="77" height="63" loading="lazy"
+                      alt="instagram post" class="img-cover">
+                  </figure>
+
+                  <a href="#" class="card-content">
+                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="insta-card">
+
+                  <figure class="post-banner">
+                    <img src="assets/images/Screenshot (156).png" width="77" height="63" loading="lazy"
+                      alt="instagram post" class="img-cover">
+                  </figure>
+
+                  <a href="#" class="card-content">
+                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="insta-card">
+
+                  <figure class="post-banner">
+                    <img src="assets/images/Screenshot (158).png" width="77" height="63" loading="lazy"
+                      alt="instagram post" class="img-cover">
+                  </figure>
+
+                  <a href="#" class="card-content">
+                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="insta-card">
+
+                  <figure class="post-banner">
+                    <img src="assets/images/Screenshot (157).png" width="77" height="63" loading="lazy"
+                      alt="instagram post" class="img-cover">
+                  </figure>
+
+                  <a href="#" class="card-content">
+                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          &copy; Copyright 2024 Portifólio Moz Todos os direitos reservados.
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link">Termos e condicoes</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Politicas de privacidade</a>
+          </li>
+<!--futuramente-->
+          <!--<li>
+            <a href="#" class="footer-bottom-link">Login / Signup</a>
+          </li>-->
+
+        </ul>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #subir
+  -->
+
+  <a href="#top" class="back-top-btn has-after active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
