@@ -1658,9 +1658,12 @@ button{
   cursor: pointer;
 }
 .dark-mode{
-  background: linear-gradient(to right, gray, gray, black);
+  background: black;
   color: rgb(214, 214, 214);
   
+}
+body.dark-mode body{
+  background: black;
 }
 body.dark-mode header{
   background-color: black;
@@ -2375,7 +2378,8 @@ margin-top: -80rem;
   .Drak-white-Mode {
     display: block;
     position: fixed;
-    bottom: 20px;/* Ajusta para estar mais perto da borda em telas pequenas */
+    bottom: 20px;
+    right: 20px; /* Ajusta para estar mais perto da borda em telas pequenas */
     background-color: var(--majorelle-blue);
     color: var(--white);
     font-size: 16px; /* Pode reduzir o tamanho da fonte para caber melhor */
@@ -2386,8 +2390,6 @@ margin-top: -80rem;
     opacity: 0;
     transition: var(--transition-1);
     height: 28px;
-  margin-top: -2rem;
-
   }
 
   .Drak-white-Mode.active {
