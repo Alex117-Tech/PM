@@ -1660,10 +1660,10 @@ button{
 .dark-mode{
   background: black;
   color: rgb(214, 214, 214);
-  
 }
 body.dark-mode body{
   background: black;
+  background-color: black;
 }
 body.dark-mode header{
   background-color: black;
