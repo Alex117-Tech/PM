@@ -88,7 +88,9 @@
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
-
+*{
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
 *,
 *::before,
 *::after {
@@ -338,6 +340,7 @@ font-size: 2.5rem;
   z-index: 4;
   background-color: white;
   border-bottom: 1px groove rgba(255, 0, 0, 0.376);
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .header.active {
@@ -1500,7 +1503,7 @@ font-size:2rem;
   display: flex;
   width: 1350px;
   height: 800px;
-  transition: ease-in-out 1s;
+  transition: transform 0.3s ease-in-out;
 }
 .img{
   width: 1350px;
@@ -1608,6 +1611,127 @@ left: 4rem;
 
 
 
+/*-------------------Dark & White Mode----------------------*/
+/*-------------------Dark & White Mode----------------------*/
+/*-------------------Dark & White Mode----------------------*/
+/*-------------------Dark & White Mode----------------------*/
+/*-------------------Dark & White Mode----------------------*/
+
+
+
+.Drak-white-Mode{
+  position: fixed;
+  bottom: 20px;
+  right: 90px;
+  background-color: var(--majorelle-blue);
+  color: var(--white);
+  font-size: 18px;
+  padding: 11px;
+  border-radius: var(--radius-8);
+  z-index: 4;
+  visibility: hidden;
+  opacity: 0;
+  transition: var(--transition-1);
+  height: 28px;
+}
+
+
+.Drak-white-Mode.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-10px);
+}
+
+.Drak-white-Mode::after {
+  bottom: -12px;
+  right: 0;
+  width: 100%;
+  height: 9px;
+  background-image: var(--gradient);
+}
+
+@media(prefers-color-scheme: dark){
+
+}
+button{
+  all:unset;
+  cursor: pointer;
+}
+.dark-mode{
+  background: linear-gradient(to right, gray, gray, black);
+  color: rgb(214, 214, 214);
+  
+}
+body.dark-mode header{
+  background-color: black;
+}
+body.dark-mode .logo-p{
+  color: white;
+}
+body.dark-mode .logo-p:hover{
+  color: red;
+}
+body.dark-mode .header.active{
+  background-color: black; 
+}
+body.dark-mode #home{
+  background-color: black;
+  background: black;
+}
+body.dark-mode .pic{
+  background-color: black;
+  background: black;
+}
+body.dark-mode .hero .span{
+  color: white;
+}
+body.dark-mode .section{
+  background: black;
+}
+body.dark-mode .section-title{
+  color: white;
+}
+body.dark-mode .service-card{
+  color:black ;
+  background-color: rgb(206, 204, 204);
+box-shadow: 0 0 10px rgb(198, 198, 198), 0 0 10px rgb(168, 167, 167);
+}
+body.dark-mode .service-card .card-title{
+  color: black;
+  padding-bottom: 1rem;
+}
+body.dark-mode .service-card .mais04 {
+  color: white;
+}
+body.dark-mode .service-card:hover{
+  color:black ;
+box-shadow: 0 0 10px rgb(83, 30, 30), 0 0 10px rgb(107, 36, 36);
+}
+body.dark-mode .card-title{
+  color: black;
+  padding-bottom: 1rem;
+}
+body.dark-mode .navbar-link:hover{
+color: white;
+}
+body.dark-mode .project-card{
+  box-shadow: 0 0 10px rgb(128, 128, 128), 0 0 15px rgb(128, 128, 128);
+}
+body.dark-mode .card-title{
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1350px) {
  
@@ -1635,6 +1759,7 @@ left: 4rem;
   }
   
 }
+
 
 @media (max-width: 1240px) {
 

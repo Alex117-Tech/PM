@@ -35,6 +35,7 @@ addEventOnElem(navbarLinks, "click", closeNavbar);
 const header = document.querySelector("[data-header]");
 const backTopBtn = document.querySelector("[data-back-top-btn]");
 
+// Função que ativa ou desativa as classes com base na rolagem
 const headerActive = function () {
   if (window.scrollY > 80) {
     header.classList.add("active");
@@ -45,7 +46,24 @@ const headerActive = function () {
   }
 }
 
-addEventOnElem(window, "scroll", headerActive);
+// Adiciona o evento de rolagem para ativar a função acima
+window.addEventListener("scroll", headerActive)
+
+const btnDark = document.querySelector("[Drak-white-Mode]");
+
+// Função que ativa ou desativa as classes com base na rolagem
+const headerActiveDark = function () {
+  if (window.scrollY > 80) {
+    header.classList.add("active");
+    btnDark.classList.add("active");
+  } else {
+    header.classList.remove("active");
+    btnDark.classList.remove("active");
+  }
+}
+
+// Adiciona o evento de rolagem para ativar a função acima
+window.addEventListener("scroll", headerActiveDark)
 
 
 
@@ -53,53 +71,101 @@ addEventOnElem(window, "scroll", headerActive);
 
 //----------------------------------------------------------------//
 var contar = 1;
-var indice = 0; // Global para manter sincronizado
+var indice = 0; 
 const radioButtons = document.querySelectorAll('input[name="radio-btn"]');
 
-// Definindo o primeiro radio como ativo
+
 window.document.getElementById("radio1").checked = true;
 
-// Função para avançar para a próxima imagem automaticamente a cada 10 segundos
+
 setInterval(() => {
   ProximaImagem();
 }, 10000);
 
-// Função para avançar para a próxima imagem automaticamente
 function ProximaImagem() {
   contar++;
   if (contar > radioButtons.length) {
     contar = 1;
   }
   window.document.getElementById("radio" + contar).checked = true;
-  indice = contar - 1; // Atualiza o índice manual
+  indice = contar - 1; 
 }
 
 //------------------------------Setinhas-----------------------------//
 
 document.addEventListener('DOMContentLoaded', function () {
-  const Esquerda = document.getElementById("esquerda");
-  const Direita = document.getElementById("direita");
+  const Direita = document.getElementById("esquerda");
+  const Esquerda = document.getElementById("direita");
+  const radioButtons = document.querySelectorAll('input[type="radio"]'); // Seleciona os botões de rádio
+  let indice = 0; // Inicializa o índice
 
   Esquerda.addEventListener("click", clicarEsquerda);
   Direita.addEventListener("click", clicarDireita);
 
-  // Função ao clicar na seta direita (avançar)
   function clicarDireita() {
     indice++;
     if (indice >= radioButtons.length) {
-      indice = 0; // Volta ao primeiro slide
+      indice = 0; 
     }
     radioButtons[indice].checked = true;
-    contar = indice + 1; // Sincroniza o contador automático
+    contar = indice + 1; // Atualiza o contador, se necessário
   }
 
-  // Função ao clicar na seta esquerda (voltar)
   function clicarEsquerda() {
     indice--;
     if (indice < 0) {
-      indice = radioButtons.length - 1; // Volta ao último slide
+      indice = radioButtons.length - 1; 
     }
     radioButtons[indice].checked = true;
-    contar = indice + 1; // Sincroniza o contador automático
+    contar = indice + 1; // Atualiza o contador, se necessário
   }
 });
+
+//-----------------------Dark & White Mode--------------------//
+//-----------------------Dark & White Mode--------------------//
+//-----------------------Dark & White Mode--------------------//
+//-----------------------Dark & White Mode--------------------//
+
+const darkIcon= document.getElementById("light-icon");//Naruto
+const lightIcon= document.getElementById("dark-icon");//Sasuke
+
+const ModoTrevas = matchMedia("(prefers-color-scheme: dark)");
+
+
+let darkmode=localStorage.getItem("dark-mode") ?? window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+if (darkmode) {
+  document.body.classList.add("dark-mode");
+}
+
+function drawBuildings() {
+  StaticRange.buildings.array.forEach((buildings) => {
+    ctx.fillStyle = darkmode ?"#254d7e" : "#947285";
+    ctx.fillRect(buildings.x, 0, buildings.width. buildings.height);
+  });
+}
+
+if (darkmode) {
+  document.body.classList.add("dakmode");
+  darkIcon.setAttribute("display", "none");
+} else {
+  lightIcon.setAttribute("display", "none");
+}
+
+function toggleDarkMode() {
+  darkmode = !darkmode;
+  localStorage.setItem("dark-mode", darkmode)
+  document.body.classList.toggle("dark-mode");
+
+if (!darkmode) {
+  lightIcon.setAttribute("display", "block")
+  darkIcon.setAttribute("display", "none")
+} else {
+  darkIcon.setAttribute("display", "block")
+  lightIcon.setAttribute("display", "none")
+}
+
+}
+
+
+
