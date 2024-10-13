@@ -1980,10 +1980,8 @@ margin-top: -80rem;
     margin-left: 0;
   }
 
-  .seta {
-    margin-top: 0;
-    bottom: 0;
-  }
+
+
 
   
 .logo-p{
@@ -2134,7 +2132,7 @@ margin-top: -80rem;
   }
 
   .seta {
-    font-size: 1.5rem;
+    font-size: 5rem;
     padding: 0.8rem;
     bottom: 21rem;
   }
@@ -2224,7 +2222,11 @@ margin-top: -80rem;
   margin-left: -24px;
   margin-top: 4rem;
 }
- 
+.seta {
+  font-size: 5rem;
+  padding: 1rem;
+  margin-bottom: -10rem;
+}
 }
 
 @media (max-width: 350px) {
