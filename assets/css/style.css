@@ -2375,24 +2375,23 @@ margin-top: -80rem;
 }
 @media (max-width: 450px) {
 
-  .Drak-white-Mode {
-    display: block;
-    position: fixed;
-    bottom: 20px;
-    right: 20px; /* Ajusta para estar mais perto da borda em telas pequenas */
-    background-color: var(--majorelle-blue);
-    color: var(--white);
-    font-size: 16px; /* Pode reduzir o tamanho da fonte para caber melhor */
-    padding: 8px; /* Ajuste o padding se necessário */
-    border-radius: var(--radius-8);
-    z-index: 4;
-    visibility: hidden;
-    opacity: 0;
-    transition: var(--transition-1);
-    height: 28px;
-    margin-top: -3rem;
-  }
 
+    .Drak-white-Mode {
+      display: block;
+      position: fixed;
+      bottom: 20px;
+      right: 20px; /* Ajusta para estar mais perto da borda em telas pequenas */
+      background-color: var(--majorelle-blue);
+      color: var(--white);
+      font-size: 16px; /* Pode reduzir o tamanho da fonte para caber melhor */
+      padding: 8px; /* Ajuste o padding se necessário */
+      border-radius: var(--radius-8);
+      z-index: 4;
+      visibility: hidden;
+      opacity: 0;
+      transition: var(--transition-1);
+      height: 28px;
+    }
   .Drak-white-Mode.active {
     visibility: visible;
     opacity: 1;
