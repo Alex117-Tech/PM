@@ -144,7 +144,6 @@ function toggleDarkMode() {
   darkmode = !darkmode; 
   localStorage.setItem("dark-mode", darkmode); 
   document.body.classList.toggle("dark-mode");
-
   if (darkmode) {
     lightIcon.style.display = "none";
     darkIcon.style.display = "block";
