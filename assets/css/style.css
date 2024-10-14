@@ -89,7 +89,7 @@
   #RESET
 \*-----------------------------------*/
 *{
-  transition: background-color 0.5s ease, color 0.5s ease;
+  transition: background-color 0.5s ease, color 0.1s;
 }
 *,
 *::before,
@@ -138,8 +138,6 @@ body {
   font-size: 1.6rem;
   line-height: 1.75;
 overflow-x: hidden;
-background: linear-gradient(to right, white,rgb(239, 239, 239),rgba(0, 0, 0, 0.635));
-
 }
 
 :focus-visible { outline-offset: 4px; }
@@ -162,7 +160,7 @@ background: linear-gradient(to right, white,rgb(239, 239, 239),rgba(0, 0, 0, 0.6
 
 .container { padding-inline: 15px; }
 
-.section { padding-block: var(--section-padding); background: linear-gradient(to right, white,rgb(239, 239, 239),rgba(0, 0, 0, 0.635));
+.section { padding-block: var(--section-padding); background: linear-gradient(to right, white,white,rgba(0, 149, 255, 0.47));
 }
 
 .h1,
@@ -522,7 +520,7 @@ font-size: 2.5rem;
   
 }
 #home{
- background:  linear-gradient(to right, white,rgb(239, 239, 239),rgba(0, 0, 0, 0.493));
+  background: linear-gradient(to right, white,white,rgba(0, 149, 255, 0.47));
 }
 
 .hero-text {
@@ -1029,7 +1027,9 @@ box-shadow: 0 0 10px red;
   height: 10px;
   background-image: var(--gradient);
 }
-
+.up-dark:hover{
+  color: black;
+}
 
 
 
@@ -2374,10 +2374,6 @@ margin-top: -80rem;
   }
 }
 @media (max-width: 450px) {
-
-
-
-
   .service {
     padding: 2rem 1rem;
   }
