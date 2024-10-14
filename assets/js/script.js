@@ -126,8 +126,8 @@ document.addEventListener('DOMContentLoaded', function () {
 //-----------------------Dark & White Mode--------------------//
 //-----------------------Dark & White Mode--------------------//
 
-const darkIcon = document.getElementById("dark-icon"); // Sasuke Dark
-const lightIcon = document.getElementById("light-icon"); // Naruto
+const lightIcon = document.getElementById("dark-icon"); // Sasuke Dark
+const darkIcon = document.getElementById("light-icon"); // Naruto
 
 let darkmode = localStorage.getItem("dark-mode") === "true" || window.matchMedia("(prefers-color-scheme: dark)").matches;
 
