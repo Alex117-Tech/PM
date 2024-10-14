@@ -150,6 +150,5 @@ function toggleDarkMode() {
     darkIcon.style.display = "block";
   } else {
     lightIcon.style.display = "block";
-    darkIcon.style.display = "none";
-  }
+    darkIcon.style.display = "none";}
 }
