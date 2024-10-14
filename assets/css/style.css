@@ -1116,7 +1116,7 @@ font-size:2rem;
 
   
   .pic{
-    background:  linear-gradient(to right, white,rgb(239, 239, 239),rgb(0, 0, 0));
+    background: linear-gradient(to right, white,white,rgba(0, 149, 255, 0.47));
   }
   .container { max-width: 820px; }
 
@@ -2068,6 +2068,9 @@ margin-top: -80rem;
 
 
 @media (max-width: 450px) {
+  body{
+    background: linear-gradient(to right, white,white,rgba(0, 149, 255, 0.47));
+  }
   .vamo-conv { display: none; }
   .header{
     max-width: 100%;
@@ -2500,9 +2503,6 @@ margin-top: -80rem;
     height: 55rem;
   }
 
-  .feature{
-    background: linear-gradient(to right, white,rgb(239, 239, 239),rgba(70, 68, 68, 0.289));
-  }
 
   .h3{
     font-size: 1.7rem;
