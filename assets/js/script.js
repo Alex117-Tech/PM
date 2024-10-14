@@ -126,39 +126,46 @@ document.addEventListener('DOMContentLoaded', function () {
 //-----------------------Dark & White Mode--------------------//
 //-----------------------Dark & White Mode--------------------//
 
-const darkIcon = document.getElementById("dark-icon"); // Sasuke
-const lightIcon = document.getElementById("light-icon"); // Naruto
+const darkIcon= document.getElementById("light-icon");//Naruto
+const lightIcon= document.getElementById("dark-icon");//Sasuke
 
-let darkmode = localStorage.getItem("dark-mode") === "true" || window.matchMedia("(prefers-color-scheme: dark)").matches;
+const ModoTrevas = matchMedia("(prefers-color-scheme: dark)");
 
-// Aplica a classe dark-mode se darkmode for verdadeiro
+
+let darkmode=localStorage.getItem("dark-mode") ?? window.matchMedia("(prefers-color-scheme: dark)").matches;
+
 if (darkmode) {
   document.body.classList.add("dark-mode");
-  // Exibe darkIcon e oculta lightIcon
-  lightIcon.style.display = "none";
-  darkIcon.style.display = "block";
+}
+
+function drawBuildings() {
+  StaticRange.buildings.array.forEach((buildings) => {
+    ctx.fillStyle = darkmode ?"#254d7e" : "#947285";
+    ctx.fillRect(buildings.x, 0, buildings.width. buildings.height);
+  });
+}
+
+if (darkmode) {
+  document.body.classList.add("dakmode");
+  darkIcon.setAttribute("display", "none");
 } else {
-  // Exibe lightIcon e oculta darkIcon
-  lightIcon.style.display = "block";
-  darkIcon.style.display = "none";
+  lightIcon.setAttribute("display", "none");
 }
 
 function toggleDarkMode() {
-  darkmode = !darkmode; // Inverte o valor de darkmode
-  localStorage.setItem("dark-mode", darkmode); // Salva no localStorage
-  document.body.classList.toggle("dark-mode"); // Alterna a classe no body
+  darkmode = !darkmode;
+  localStorage.setItem("dark-mode", darkmode)
+  document.body.classList.toggle("dark-mode");
 
-  if (darkmode) {
-    // Modo escuro ativado
-    lightIcon.style.display = "none";
-    darkIcon.style.display = "block";
-  } else {
-    // Modo claro ativado
-    lightIcon.style.display = "block";
-    darkIcon.style.display = "none";
-  }
+if (!darkmode) {
+  lightIcon.setAttribute("display", "block")
+  darkIcon.setAttribute("display", "none")
+} else {
+  darkIcon.setAttribute("display", "block")
+  lightIcon.setAttribute("display", "none")
 }
 
+}
 
 
 
