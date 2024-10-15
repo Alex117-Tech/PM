@@ -1773,7 +1773,7 @@ body.dark-mode .back-top-btn{
 color: black;
 background-color: white;
 }
-.Drak-white-Mode:hover{
+body.dark-mode .Drak-white-Mode:hover{
 color: rgb(255, 255, 255);
 background-color: rgb(255, 0, 0);
 }
