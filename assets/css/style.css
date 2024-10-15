@@ -1765,7 +1765,7 @@ body.dark-mode .btn-primary:is(:hover, :focus) { color: rgb(255, 0, 0); }
 body.dark-mode .filter-list .btn-secondary:hover {
 color: white;
 }
-body.dark-mode.Drak-white-Mode{
+body.dark-mode .Drak-white-Mode{
 color: black;
 background-color: white;
 }
